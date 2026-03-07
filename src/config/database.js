@@ -1,7 +1,7 @@
 const { Sequelize } = require("sequelize");
 const pg = require("pg");
 
-const sequelize = new Sequelize(process.env.POSTGRES_URL, {
+const sequelize = new Sequelize(process.env.DATABASE_URI, {
   dialect: "postgres",
   dialectModule: pg,
   dialectOptions: {
