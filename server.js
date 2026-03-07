@@ -13,4 +13,4 @@ server.get("/", (req, res) => {
     res.html("<h1>Hola mundo</h1>")
 })
 
-module.exports = { server };
+module.exports = server;
