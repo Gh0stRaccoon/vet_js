@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 
-const sequelize = new Sequelize(process.env.POSTGRES_URL, {
+const sequelize = new Sequelize(process.env.DATABASE_URI, {
   // logging: false,
   dialect: "postgres",
   dialectOptions: {
@@ -12,3 +12,5 @@ const sequelize = new Sequelize(process.env.POSTGRES_URL, {
 });
 
 module.exports = { sequelize };
+// postgres://postgres.cgjazmirtojrrroeicav:nkpr3b6ymT3vUXFk@aws-1-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require&supa=base-pooler.x
+// postgres://postgres.cgjazmirtojrrroeicav:nkpr3b6ymT3vUXFk@aws-1-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require&pgbouncer=true
