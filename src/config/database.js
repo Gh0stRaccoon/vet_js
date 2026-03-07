@@ -10,6 +10,7 @@ const sequelize = new Sequelize(process.env.POSTGRES_URL, {
       rejectUnauthorized: false,
     },
   },
+  ssl: true,
   logging: false, // Opcional, para no saturar los logs en Vercel
 });
 
