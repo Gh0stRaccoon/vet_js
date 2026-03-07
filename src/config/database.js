@@ -11,7 +11,7 @@ const sequelize = new Sequelize(process.env.DATABASE_URI, {
     },
   },
   ssl: true,
-  logging: false, // Opcional, para no saturar los logs en Vercel
+  logging: false,
 });
 
 module.exports = { sequelize };
